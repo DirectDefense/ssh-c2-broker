@@ -72,7 +72,7 @@ A lightweight SSH-based Command & Control (C2) broker for red team operations an
 
 ```bash
 # Clone/copy the repo to the server
-git clone <repo> /opt/ssh-c2-broker
+git clone https://github.com/DirectDefense/ssh-c2-broker.git /opt/ssh-c2-broker
 
 # Run the server installer
 cd /opt/ssh-c2-broker/Server
