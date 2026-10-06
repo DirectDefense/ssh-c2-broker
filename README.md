@@ -29,7 +29,7 @@ A lightweight SSH-based Command & Control (C2) broker for red team operations an
 | File | Purpose |
 |---|---|
 | `install.sh` | Creates the `c2` relay user (`rbash`), installs dependencies, and deploys server scripts. |
-| `sshd_config` | Hardened OpenSSH config listening on ports **22, 53, 80, 443**; key-auth only, no root login. |
+| `sshd_config` | OpenSSH config listening on ports **22, 53, 80, 443** |
 | `configfiles/registerc2.sh` | Called by clients on first connect; assigns a unique persistent port and records the device in `c2database.txt`. |
 | `configfiles/active_c2.sh` | Checks whether a specific port tunnel is live; used by the client for sanity checks. |
 | `configfiles/active_c2_tagged.sh` | Lists all active tunnels with hostname and tag; used by the operator menu. |
